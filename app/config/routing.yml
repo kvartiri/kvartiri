@@ -1,0 +1,22 @@
+kvartiri_control_panel:
+    resource: "@KvartiriControlPanelBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pages:
+    resource: "@PagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+kvartiri:
+    resource: "@KvartiriBundle/Resources/config/routing.yml"
+    prefix:   /
+
+users:
+    resource: "@UsersBundle/Resources/config/routing.yml"
+    prefix:   /
+
+users2:
+    resource: "@UsersBundle/Controller/"
+    type : annotation
+    prefix:   /
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
