@@ -24,21 +24,21 @@ class PromotionPeriod
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="start", type="datetime")
+     * @ORM\Column(name="start", type="datetime",nullable=true)
      */
     private $start;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="finish", type="datetime")
+     * @ORM\Column(name="finish", type="datetime",nullable=true)
      */
     private $finish;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="discount", type="float")
+     * @ORM\Column(name="discount", type="float",nullable=true)
      */
     private $discount;
 

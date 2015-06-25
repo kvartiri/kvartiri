@@ -24,10 +24,13 @@
         {{ form_errors( edit_form.hotel) }}
 
         {% for item in entity.roomseasons %}
-            <p><strong>{{item.hotelseasons[0]}}</strong></p>
-            <input type="hidden" name="hotelseasons[]" value="{{item.id}}" />
+            {% for value in item.hotelseasons %}
+            <p><strong>{{value.name}}</strong></p>
+            <input type="hidden" name="hotelseasons[]" value="{{value.id}}" />
 
             <label>Prix</label><input type="text" name="price[]" value="{{item.price}}" />
+                    {% endfor %}
+
         {% endfor %}
         {{ form(edit_form) }}
 

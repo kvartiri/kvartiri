@@ -15,12 +15,8 @@ class ReductionChildrenType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('age' , null, array(
-                'required' => false,
-            ))
-            ->add('reduction' , null, array(
-                'required' => false,
-            ))
+            ->add('age' )
+            ->add('reduction' )
         ;
     }
     

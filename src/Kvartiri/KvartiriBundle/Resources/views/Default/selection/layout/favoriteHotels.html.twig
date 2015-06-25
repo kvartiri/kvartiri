@@ -49,7 +49,7 @@
                             {#{{ dump(image.pathIamgeSmall) }}#}
                         {#{% endfor %}#}
                         <form action="{{ path('addFavoriteHotel', { 'id' : hotel.id }) }}" method="get">
-                            <td><img src="{{ asset('img/hotels/'~hotel.images[0].pathIamgeSmall) }}" alt="Greek Hotels" class="img-rounded" style="width:180px;height:135px"></td>
+                            {#<td><img src="{{ asset('img/hotels/'~hotel.images[0].pathIamgeSmall) }}" alt="Greek Hotels" class="img-rounded" style="width:180px;height:135px"></td>#}
                             <td>{{ hotel.name }}</td>
                             <td>
                                 <select name="roomId" class="span2" onChange="this.form.submit()">

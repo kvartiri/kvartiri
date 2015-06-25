@@ -15,7 +15,7 @@ class PromotionGroup
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer")
+     * @ORM\Column(name="id", type="integer",nullable=true)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
@@ -24,14 +24,14 @@ class PromotionGroup
     /**
      * @var integer
      *
-     * @ORM\Column(name="people", type="integer")
+     * @ORM\Column(name="people", type="integer",nullable=true)
      */
     private $people;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="discount", type="float")
+     * @ORM\Column(name="discount", type="float",nullable=true)
      */
     private $discount;
 

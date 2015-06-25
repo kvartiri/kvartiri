@@ -46,7 +46,7 @@ class PromotionsType extends AbstractType {
                     'type' => new PromotionFixedDatesType(),
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'by_reference' => false,
+                    
                    
                         )
                 )
@@ -54,14 +54,14 @@ class PromotionsType extends AbstractType {
                     'type' => new PromotionGroupType(),
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'by_reference' => false,
+                
                         )
                 )
                 ->add('promotionMoreNights', 'collection', array(
                     'type' => new PromotionMoreNightsType(),
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'by_reference' => false,
+                  
                
                         )
                 )
@@ -69,7 +69,7 @@ class PromotionsType extends AbstractType {
                     'type' => new PromotionPeriodType(),
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'by_reference' => false,
+                 
             
                         )
                 )
@@ -77,7 +77,7 @@ class PromotionsType extends AbstractType {
                     'type' => new ReductionChildrenType(),
                     'allow_add' => true,
                     'allow_delete' => true,
-                    'by_reference' => false,
+                  
                  
                         )
                 )

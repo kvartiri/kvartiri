@@ -24,14 +24,14 @@ class PromotionFixedDates
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="fixedDate", type="datetime")
+     * @ORM\Column(name="fixedDate", type="datetime",nullable=true)
      */
     private $fixedDate;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="discount", type="float")
+     * @ORM\Column(name="discount", type="float",nullable=true)
      */
     private $discount;
 

@@ -30,41 +30,41 @@ class Promotions
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\PromotionEarlyBooking", cascade={"persist", "remove"})
-     * @ORM\JoinColumn( nullable=true)
+     * @ORM\JoinColumn(name="promotionfixeddates_id", referencedColumnName="id", nullable=false)
      */
     private $promotionEarlyBooking;
 
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\PromotionFixedDates", cascade={"persist", "remove"})
-     * @ORM\Column(nullable=true)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $promotionFixedDates;
 
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\PromotionGroup", cascade={"persist", "remove"})
-     * @ORM\Column(nullable=true)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $promotionGroup;
 
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\PromotionMoreNights", cascade={"persist", "remove"})
-     * @ORM\Column(nullable=true)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $promotionMoreNights;
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\PromotionPeriod", cascade={"persist", "remove"})
-     * @ORM\Column(nullable=true)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $promotionPeriod;
 
 
     /**
      * @ORM\ManyToMany(targetEntity="Kvartiri\KvartiriBundle\Entity\ReductionChildren", cascade={"persist", "remove"})
-     * @ORM\Column(nullable=true)
+     * @ORM\JoinColumn(name="reductionchildren_id", referencedColumnName="id", nullable=false)
      */
     private $reductionChildren;
 

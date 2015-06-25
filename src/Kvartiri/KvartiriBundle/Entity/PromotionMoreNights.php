@@ -24,14 +24,14 @@ class PromotionMoreNights
     /**
      * @var integer
      *
-     * @ORM\Column(name="nights", type="integer")
+     * @ORM\Column(name="nights", type="integer",nullable=true)
      */
     private $nights;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="discount", type="float")
+     * @ORM\Column(name="discount", type="float",nullable=true)
      */
     private $discount;
 

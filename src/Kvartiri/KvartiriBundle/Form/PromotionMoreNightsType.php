@@ -15,10 +15,10 @@ class PromotionMoreNightsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nights', null, array(
+            ->add('nights', 'text', array(
                 'required' => false,
             ))
-            ->add('discount', null, array(
+            ->add('discount', 'text', array(
                 'required' => false,
             ))
         ;

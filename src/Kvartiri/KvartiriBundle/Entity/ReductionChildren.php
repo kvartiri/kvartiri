@@ -24,14 +24,14 @@ class ReductionChildren
     /**
      * @var string
      *
-     * @ORM\Column(name="age", type="string", length=25)
+     * @ORM\Column(name="age", type="string", length=25,nullable=true)
      */
     private $age;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="reduction", type="float")
+     * @ORM\Column(name="reduction", type="float",nullable=true)
      */
     private $reduction;
 

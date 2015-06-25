@@ -15,9 +15,7 @@ class PromotionEarlyBookingType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', null, array(
-                'required' => false,
-            ))
+            ->add('name')
             ->add('days', null, array(
                 'required' => false,
             ))

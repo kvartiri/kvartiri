@@ -7,7 +7,7 @@
     {% if is_granted('IS_AUTHENTICATED_FULLY') %}
         {% include 'KvartiriControlPanelBundle:ControlPanel:menu/controlPanel.html.twig' %}
     {% else %}
-        {% include 'UsersBundle:Default:modulesUsed/users.html.twig' %}
+        {#{% include 'UsersBundle:Default:modulesUsed/users.html.twig' %}#}
     {% endif %}
 
     <div class="row">
@@ -16,15 +16,15 @@
             {#{% include '::modulesUsed/navigation.html.twig' %}#}
             {#{% render(controller('KvartiriBundle:Selection:menu')) %}#}
 
-            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            {#{% if is_granted('IS_AUTHENTICATED_FULLY') %}#}
 
                 {#{% include 'UsersBundle:Default:modulesUsed/usersConnect.html.twig' %}#}
 
                 {#ControlPanelBundle:ControlPanel:layout/layout.html.twig#}
                 {#{% include 'UsersBundle:Default:modulesUsed/mySelection.html.twig' %}#}
-            {% else %}
-                {% include 'UsersBundle:Default:modulesUsed/users.html.twig' %}
-            {% endif %}
+            {#{% else %}#}
+                {#{% include 'UsersBundle:Default:modulesUsed/users.html.twig' %}#}
+            {#{% endif %}#}
             {#{% render(controller('KvartiriBundle:Hotels:getCities')) %}#}
 
             {#{% include '::modulesUsed/filters.html.twig' %}#}
